@@ -2,7 +2,7 @@
   "name": "vscode-extension-js",
   "displayName": "vscode-extension-js",
   "description": "关于 JavaScript 的 VSCode 扩展代码片段",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
@@ -25,7 +25,7 @@
     "vscode": "^1.70.0"
   },
   "keywords": [
-    "vue"
+    "javascript"
   ],
   "contributes": {
     "snippets": [
