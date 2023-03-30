@@ -1,0 +1,9 @@
+{
+  "初始化页面": {
+    "prefix": "h5c",
+    "body": [
+      "<!DOCTYPE html>\n<html lang=\"zh-cn\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/logo.svg\" />\n    <title>Hello,World</title>\n    <meta name=\"keywords\" content=\"关键词\" />\n    <meta name=\"description\" content=\"描述\" />\n    <style>\n      * {\n        margin: 0;\n        padding: 0;\n        box-sizing: border-box;\n      }\n    </style>\n  </head>\n  <body>\n    <div></div>\n    <script>\n      window.onload = () => {}\n    </script>\n  </body>\n</html>\n"
+    ],
+    "description": "html 初始化页面"
+  }
+}

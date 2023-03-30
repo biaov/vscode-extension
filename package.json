@@ -1,6 +1,6 @@
 {
-  "name": "vscode-extension-js",
-  "displayName": "vscode-extension-js",
+  "name": "vscode-extension-html",
+  "displayName": "vscode-extension-html",
   "description": "关于 JavaScript 的 VSCode 扩展代码片段",
   "version": "1.0.0",
   "publisher": "biaov06",
@@ -16,22 +16,22 @@
     "color": "#f5f3f4",
     "theme": "light"
   },
-  "homepage": "https://marketplace.visualstudio.com/items?itemName=biaov06.vscode-extension-js",
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=biaov06.vscode-extension-html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/biaov/vscode-extension/tree/js"
+    "url": "https://github.com/biaov/vscode-extension/tree/html"
   },
   "engines": {
     "vscode": "^1.70.0"
   },
   "keywords": [
-    "vue"
+    "html"
   ],
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/javascript.json"
+        "language": "html",
+        "path": "./snippets/html.json"
       }
     ]
   }
