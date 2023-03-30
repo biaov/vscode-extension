@@ -6,7 +6,8 @@
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
-    "build": "vsce package"
+    "build": "vsce package",
+    "publish": "vsce publish"
   },
   "categories": [
     "Snippets"
