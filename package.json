@@ -1,8 +1,8 @@
 {
-  "name": "vscode-extension-js",
-  "displayName": "vscode-extension-js",
-  "description": "关于 JavaScript 的 VSCode 扩展代码片段",
-  "version": "1.0.1",
+  "name": "vscode-extension-ts",
+  "displayName": "vscode-extension-ts",
+  "description": "关于 typescript 的 VSCode 扩展代码片段",
+  "version": "1.0.0",
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
@@ -16,22 +16,22 @@
     "color": "#f5f3f4",
     "theme": "light"
   },
-  "homepage": "https://marketplace.visualstudio.com/items?itemName=biaov06.vscode-extension-js",
+  "homepage": "https://marketplace.visualstudio.com/items?itemName=biaov06.vscode-extension-ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/biaov/vscode-extension/tree/js"
+    "url": "https://github.com/biaov/vscode-extension/tree/ts"
   },
   "engines": {
     "vscode": "^1.70.0"
   },
   "keywords": [
-    "javascript"
+    "typescript"
   ],
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/javascript.json"
+        "language": "typescript",
+        "path": "./snippets/typescript.tson"
       }
     ]
   }
