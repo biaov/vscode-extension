@@ -2,7 +2,7 @@
   "name": "vscode-extension-html",
   "displayName": "vscode-extension-html",
   "description": "关于 JavaScript 的 VSCode 扩展代码片段",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
