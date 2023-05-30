@@ -55,5 +55,12 @@
       "<template>\n  <uc-layout-form @submit=\"onSubmit\" v-if=\"!props.loading\"></uc-layout-form>\n</template>\n<script setup>\nimport { message } from 'ant-design-vue'\nimport { useFormState } from '@/composables/useFormState'\nimport { demoAPi } from '@/api'\n\nconst { formState, setFormState } = useFormState()\nconst { id } = useRoute().params\n\nconst onSubmit = () => {}\n</script>\n"
     ],
     "description": "初始化表单"
+  },
+  "初始化组件": {
+    "prefix": "init-component",
+    "body": [
+      "<template>\n  <!-- 组件 -->\n  <div></div>\n</template>\n<script setup>\ndefineOptions({\n  name: ''\n})\n\n/**\n * 响应事件\n */\nconst emit = defineEmits([])\n\n/**\n * 所需参数\n */\nconst props = defineProps({})\n</script>\n<style lang=\"less\" scoped>\n\n</style>"
+    ],
+    "description": "初始化表单"
   }
 }
