@@ -25,7 +25,8 @@
     "vscode": "^1.70.0"
   },
   "keywords": [
-    "vue"
+    "vue",
+    "snippets"
   ],
   "contributes": {
     "snippets": [
