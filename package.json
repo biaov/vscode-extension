@@ -6,6 +6,7 @@
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
+    "release": "npm run build && npm run publish",
     "build": "vsce package",
     "publish": "vsce publish"
   },
