@@ -2,10 +2,11 @@
   "name": "vscode-extension-ts",
   "displayName": "vscode-extension-ts",
   "description": "关于 typescript 的 VSCode 扩展代码片段",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
+    "release": "npm run build && npm run publish",
     "build": "vsce package",
     "publish": "vsce publish"
   },
