@@ -3,5 +3,10 @@
     "prefix": "log",
     "body": ["console.log($1)"],
     "description": "console.log 打印"
+  },
+  "显示隐藏": {
+    "prefix": "init-visible",
+    "body": ["const [visible, setVisible] = useVisible()"],
+    "description": "显示隐藏"
   }
 }
