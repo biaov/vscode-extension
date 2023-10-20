@@ -2,9 +2,12 @@
   "Vue init less": {
     "prefix": "init-vue2",
     "body": [
-      "<template>\n\t<!--  -->\n\t<div class=\"m-$2\">\n\t\t\n\t</div>\n</template>",
-      "<script>\n\nexport default {\n\tdata(){\n\t\treturn {\n\t\t\t\n\t\t}\n\t},\n\tmethods: {\n\t\t\n\t}\n}\n</script>",
-      "<style scoped lang=\"less\">\n.m-$2{\n\t\n}\n</style>"
+      "<template>\n\t<!--  -->\n\t<div class=\"$2\">\n\t\t\n\t</div>\n</template>",
+      "\n<script>",
+      "\nexport default {\n\tdata(){\n\t\treturn {\n\t\t\t\n\t\t}\n\t},\n\tmethods: {\n\t\t\n\t}\n}",
+      "</script>",
+      "\n<style scoped lang=\"less\">",
+      "\n</style>\n"
     ],
     "description": "vue2 初始化页面"
   },
@@ -12,8 +15,11 @@
     "prefix": "init-uniapp",
     "body": [
       "<template>\n\t<!--  -->\n\t<view class=\"$2\">\n\t\t\n\t</view>\n</template>",
-      "<script>\n\nexport default {\n\tdata(){\n\t\treturn {\n\t\t\t\n\t\t}\n\t},\n\tonLoad() {\n\t\t\n\t},\n\tmethods: {\n\t\t\n\t}\n}\n</script>",
-      "<style scoped lang=\"less\">\n.$2{\n\t\n}\n</style>"
+      "\n<script>",
+      "\nexport default {\n\tdata(){\n\t\treturn {\n\t\t\t\n\t\t}\n\t},\n\tonLoad() {\n\t\t\n\t},\n\tmethods: {\n\t\t\n\t}\n}",
+      "\n</script>",
+      "\n<style scoped lang=\"less\">",
+      "\n</style>\n"
     ],
     "description": "uniapp 初始化页面"
   },
@@ -21,45 +27,52 @@
     "prefix": "init-setup",
     "body": [
       "<template>\n\t<!--  -->\n\t<div class=\"$2\">\n\t\t\n\t</div>\n</template>",
-      "<script setup>\nimport { ref } from \"vue\";\n\n</script>",
-      "<style scoped lang=\"less\">\n.$2{\n\t\n}\n</style>"
+      "\n<script setup>",
+      "import { ref } from 'vue'",
+      "\n</script>",
+      "\n<style scoped lang=\"less\">",
+      "\n</style>\n"
     ],
     "description": "vue3 setup 初始化页面"
   },
   "vue3 setup ts 初始化": {
     "prefix": "init-setup-ts",
     "body": [
-      "<style scoped lang=\"less\">",
-      "@import './index.less';",
-      "</style>",
-      "<template>",
-      "\t<!--  -->",
-      "\t<div class=\"\"></div>",
-      "</template>",
       "<script lang=\"ts\" setup>",
       "import { ref } from 'vue'",
-      "</script>"
+      "\n</script>",
+      "\n<template>",
+      "\t<!--  -->",
+      "\t<div class=\"$2\"></div>",
+      "</template>",
+      "\n<style scoped lang=\"less\">",
+      "\n</style>\n"
     ],
     "description": "vue3 setup ts 初始化页面"
   },
   "初始化列表": {
     "prefix": "init-list",
     "body": [
-      "<template>\n  <uc-layout-list title=\"\">\n    <template #filter>\n      <a-form-item>\n        <a-input v-model:value.trim=\"formState.title\" placeholder=\"标题\" />\n      </a-form-item>\n      <a-form-item>\n        <a-button type=\"primary\" @click=\"setPage\">查询</a-button>\n        <a-button @click=\"resetFormState\">重置</a-button>\n      </a-form-item>\n    </template>\n    <template #extra></template>\n    <template #list>\n      <a-table :data-source=\"data.items\" row-key=\"id\" :loading=\"loading\" :pagination=\"stdPagination(data)\" @change=\"setPage\">\n        <a-table-column title=\"标题\" data-index=\"title\" ellipsis />\n      </a-table>\n    </template>\n  </uc-layout-list>\n</template>\n\n<script setup>\nimport { useFormState } from '@/composables/useFormState'\nimport { useTransformQuery } from '@/composables/useTransformQuery'\nimport { usePaginatorApiRequest } from '@/composables/useApiRequest'\nimport { offlineCompetitionApi } from '../../api'\n\nconst { data, setPage, loading } = usePaginatorApiRequest(({ offset, limit }) =>\n  offlineCompetitionApi.paginator({\n    filters: useTransformQuery(formState, {\n      title: 'like'\n    }),\n    offset,\n    limit\n  })\n)\n\nconst { formState, onRestFormState, resetFormState } = useFormState({\n  title: undefined\n})\n\nonRestFormState(() => setPage())\n</script>\n"
+      "<script setup>\nimport { useFormState } from '@/composables/useFormState'\nimport { useTransformQuery } from '@/composables/useTransformQuery'\nimport { usePaginatorApiRequest } from '@/composables/useApiRequest'\nimport { offlineCompetitionApi } from '../../api'\n\nconst { data, setPage, loading } = usePaginatorApiRequest(({ offset, limit }) =>\n  offlineCompetitionApi.paginator({\n    filters: useTransformQuery(formState, {\n      title: 'like'\n    }),\n    offset,\n    limit\n  })\n)\n\nconst { formState, onRestFormState, resetFormState } = useFormState({\n  title: undefined\n})\n\nonRestFormState(() => setPage())\n</script>\n",
+      "<template>\n  <uc-layout-list title=\"\">\n    <template #filter>\n      <a-form-item>\n        <a-input v-model:value.trim=\"formState.title\" placeholder=\"标题\" />\n      </a-form-item>\n      <a-form-item>\n        <a-button type=\"primary\" @click=\"setPage\">查询</a-button>\n        <a-button @click=\"resetFormState\">重置</a-button>\n      </a-form-item>\n    </template>\n    <template #extra></template>\n    <template #list>\n      <a-table :data-source=\"data.items\" row-key=\"id\" :loading=\"loading\" :pagination=\"stdPagination(data)\" @change=\"setPage\">\n        <a-table-column title=\"标题\" data-index=\"title\" ellipsis />\n      </a-table>\n    </template>\n  </uc-layout-list>\n</template>\n"
     ],
     "description": "初始化列表"
   },
   "初始化表单": {
     "prefix": "init-form",
     "body": [
-      "<template>\n  <uc-layout-form @submit=\"onSubmit\" v-if=\"!props.loading\"></uc-layout-form>\n</template>\n<script setup>\nimport { message } from 'ant-design-vue'\nimport { useFormState } from '@/composables/useFormState'\nimport { demoAPi } from '@/api'\n\nconst { formState, setFormState } = useFormState()\nconst { id } = useRoute().params\n\nconst onSubmit = () => {}\n</script>\n"
+      "<script setup>\nimport { message } from 'ant-design-vue'\nimport { useFormState } from '@/composables/useFormState'\nimport { demoAPi } from '@/api'\n\nconst { formState, setFormState } = useFormState()\nconst { id } = useRoute().params\n\nconst onSubmit = () => {}\n</script>\n",
+      "<template>\n  <uc-layout-form @submit=\"onSubmit\" v-if=\"!props.loading\"></uc-layout-form>\n</template>\n"
     ],
     "description": "初始化表单"
   },
   "初始化组件": {
     "prefix": "init-component",
     "body": [
-      "<template>\n  <!-- 组件 -->\n  <div></div>\n</template>\n<script setup>\ndefineOptions({\n  name: ''\n})\n\n/**\n * 响应事件\n */\nconst emit = defineEmits([])\n\n/**\n * 所需参数\n */\nconst props = defineProps({})\n</script>\n<style lang=\"less\" scoped>\n\n</style>"
+      "<script setup>\ndefineOptions({\n  name: ''\n})\n\n/**\n * 响应事件\n */\nconst emit = defineEmits([])\n\n/**\n * 所需参数\n */\nconst props = defineProps({})\n</script>",
+      "<template>\n  <!-- 组件 -->\n  <div class=\"$2\"></div>\n</template>",
+      "\n<style scoped lang=\"less\">",
+      "\n</style>\n"
     ],
     "description": "初始化表单"
   }
