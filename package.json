@@ -2,10 +2,11 @@
   "name": "vscode-extension-vue",
   "displayName": "vscode-extension-vue",
   "description": "关于 Vue 的 VSCode 扩展代码片段",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "publisher": "biaov06",
   "icon": "images/logo.png",
   "scripts": {
+    "release": "npm run build && npm run publish",
     "build": "vsce package",
     "publish": "vsce publish"
   },

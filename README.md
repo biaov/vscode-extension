@@ -3,7 +3,7 @@
 VSCode 扩展
 
 <h2 align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=biaov06.vscode-extension-vue"><img src="https://img.shields.io/badge/version-v1.0.6-blue" /></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=biaov06.vscode-extension-vue"><img src="https://img.shields.io/badge/version-v1.0.7-blue" /></a>
   <a href="https://github.com/biaov/vscode-extension/tree/vue/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" /></a>
 </h2>
 
